@@ -24,9 +24,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "src/assets/css/skins/default.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-2.2.0.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.selectBox.js",
+              "src/assets/js/rangeslider.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/jquery.filterizr.js",
+              "src/assets/js/wow.min.js",
+              "src/assets/js/backstretch.js",
+              "src/assets/js/jquery.countdown.js",
+              "src/assets/js/jquery.scrollUp.js",
+              "src/assets/js/particles.min.js",
+              "src/assets/js/typed.min.js",
+              "src/assets/js/jquery.mb.YTPlayer.js",
+              "src/assets/js/jquery.mCustomScrollbar.concat.min.js",
+              "src/assets/js/ie-emulation-modes-warning.js",
+              "src/assets/js/app.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +139,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "ChandranExport"
+    }
+  },
+  "defaultProject": "ChandranExport",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
